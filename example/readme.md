@@ -4,6 +4,8 @@
 
 Instructions that guide you through the process of creating .bmp images that can be used with the project.
 
+The file [index.gpl.txt](index.gpl.txt) contains the seven color palette (mentioned below) for GIMP.
+
 ## Prepare the images using Gimp
 Start [GIMP](https://www.gimp.org/) and drag the image to be processed into the application.
 
