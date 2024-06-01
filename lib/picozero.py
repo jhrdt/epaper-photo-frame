@@ -1,3 +1,6 @@
+# https://github.com/RaspberryPiFoundation/picozero/blob/main/picozero/picozero.py
+# 2024-06-01
+
 from machine import Pin, PWM, Timer, ADC
 from micropython import schedule
 from time import ticks_ms, ticks_us, sleep
