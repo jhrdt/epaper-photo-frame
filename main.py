@@ -3,6 +3,7 @@ import uos
 from machine import I2C, Pin
 
 # Third-Party
+import picozero
 import sdcard
 from eeprom import EEPROM
 from epaper import EPD_5in65
@@ -45,16 +46,19 @@ def poweroff(i):
     #time.sleep(5)
     pin.low()
 
+def next_switch_on(i):
+    switch = picozero.Switch(i)
+    return switch.is_closed
 
 # Constants
 #
 IMAGE_DIR = "/imgs"
 DONE_PIN = 16
+LOAD_NEXT_PIN = 20
 
 
-# TODO
-# If switch if off
-# poweroff(DONE_PIN)
+#if not next_switch_on(LOAD_NEXT_PIN):
+#    poweroff(DONE_PIN)
 
 
 # EEPROM
