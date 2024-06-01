@@ -26,20 +26,17 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 ## Appendix
 
 Raspberry Pi Pico
-
 * https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html
 * https://micropython.org/download/RPI_PICO/
 
 Waveshare (ePaper 5.65)
-
 * https://www.waveshare.com/wiki/Pico-ePaper-5.65
 * https://github.com/waveshareteam/Pico_ePaper_Code
 * https://www.waveshare.com/product/displays/e-paper/epaper-1/5.65inch-e-paper-module-f.htm
 
 Projects
-
 * https://github.com/robertmoro/7ColorEPaperPhotoFrame
-  * Explains how to create .bmp images in GIMP
+
 
 ## References
 
