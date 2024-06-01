@@ -2,7 +2,7 @@
 
 > Original source: https://github.com/robertmoro/7ColorEPaperPhotoFrame/
 
-Instructions that guides you through the process of creating .bmp images that can be used with the project.
+Instructions that guide you through the process of creating .bmp images that can be used with the project.
 
 ## Prepare the images using Gimp
 Start [GIMP](https://www.gimp.org/) and drag the image to be processed into the application.
