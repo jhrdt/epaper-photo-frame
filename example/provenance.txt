@@ -1,4 +1,4 @@
-675px-A_sunflower.jpg
+example.jpg -> 675px-A_sunflower.jpg
 https://commons.wikimedia.org/wiki/File:A_sunflower.jpg
 
 GimpExportImage.png
