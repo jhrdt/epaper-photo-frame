@@ -14,6 +14,31 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 * (Soft) Tactile Button
 * Rocker Switch
 
+## Wire
+
+| Component |  | RP2040 | | RP2040 |  | Component |
+| --- | --- | --- | --- | --- | --- | --- |
+| EEPROM | SDA | GP0 | | VBUS | |
+| EEPROM | SCL | GP1 | | VSYS | |
+| | | GND | | GND | |
+| SD | CLK | GP2 | | 3V3_EN | |
+| SD | MOSI | GP3 | | 3V3 (OUT) | |
+| SD | MISO | GP4 | | | |
+| SD | CS | GP5 | | GP28 | |
+| | | GND | | GND | |
+| | | GP6 | | GP27 | |
+| | | GP7 | | GP26 | |
+| EPD | DC | GP8 | | RUN | |
+| EPD | CS | GP9 | | GP22 | |
+| | | GND | | GND | |
+| EPD | CLK | GP10 | | GP21 | |
+| EPD | DIN | GP11 | | GP20 | |
+| EPD | RST | GP12 | | GP19 | |
+| EPD | BUSY | GP13 | | GP18 | |
+| | | GND | | GND | |
+| | | GP14 | | GP17 | |
+| | | GP15 | | GP16 | |
+
 ## Third-Party Libs
 
 * eeprom.py
