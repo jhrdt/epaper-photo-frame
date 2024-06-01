@@ -1,6 +1,6 @@
-# Instructions
+# Readme
 
-> Original source: https://github.com/robertmoro/7ColorEPaperPhotoFrame/README.md
+> Original source: https://github.com/robertmoro/7ColorEPaperPhotoFrame/
 
 ## Prepare the images using Gimp
 Start [GIMP](https://www.gimp.org/) and drag the image to be processed into the application.
