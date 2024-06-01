@@ -2,7 +2,6 @@
 
 Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 
-
 ## BOM
 
 * Pico-ePaper-5.65 (7-Color)
@@ -15,6 +14,14 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 * (Soft) Tactile Button
 * Rocker Switch
 
+## Third-Party Libs
+
+* eeprom.py
+  * https://github.com/brainelectronics/micropython-eeprom
+* sdcard.py
+  * https://raw.githubusercontent.com/micropython/micropython-lib/master/micropython/drivers/storage/sdcard/sdcard.py
+* Pico_ePaper-5.65.py
+  * https://github.com/waveshareteam/Pico_ePaper_Code/blob/main/python/Pico-ePaper-5.65f.py
 
 ## Appendix
 
