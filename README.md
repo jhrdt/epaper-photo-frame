@@ -32,10 +32,10 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 | EPD | CS | GP9 | | GP22 | |
 | | | GND | | GND | |
 | EPD | CLK | GP10 | | GP21 | |
-| EPD | DIN | GP11 | | GP20 | DIP Switch |
+| EPD | DIN | GP11 | | GP20 | | DIP Switch |
 | EPD | RST | GP12 | | GP19 | |
 | EPD | BUSY | GP13 | | GP18 | |
-| | | GND | | GND | DIP Switch |
+| | | GND | | GND | | DIP Switch |
 | | | GP14 | | GP17 | |
 | | | GP15 | | GP16 | |
 
