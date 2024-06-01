@@ -32,6 +32,7 @@ Waveshare (ePaper 5.65)
 Projects
 
 * https://github.com/robertmoro/7ColorEPaperPhotoFrame
+  * Explains how to create .bmp images in GIMP
 
 ## References
 
