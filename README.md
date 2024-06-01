@@ -17,7 +17,7 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 ## Third-Party Libs
 
 * eeprom.py
-  * https://github.com/brainelectronics/micropython-eeprom
+  * https://github.com/brainelectronics/micropython-eeprom/blob/main/eeprom/eeprom.py
 * sdcard.py
   * https://raw.githubusercontent.com/micropython/micropython-lib/master/micropython/drivers/storage/sdcard/sdcard.py
 * Pico_ePaper-5.65.py
