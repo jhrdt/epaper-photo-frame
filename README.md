@@ -30,7 +30,7 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 | | | GP7 | | GP26 | | |
 | EPD | DC | GP8 | | RUN | | |
 | EPD | CS | GP9 | | GP22 | | |
-| | | GND | | GND | | |
+| | | GND | | GND | | Timer |
 | EPD | CLK | GP10 | | GP21 | | |
 | EPD | DIN | GP11 | | GP20 | | DIP Switch |
 | EPD | RST | GP12 | | GP19 | | |
