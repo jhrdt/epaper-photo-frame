@@ -56,9 +56,11 @@ IMAGE_DIR = "/imgs"
 DONE_PIN = 16
 LOAD_NEXT_PIN = 20
 
+led = Pin(25, Pin.OUT)
+led.toggle()
 
-#if not next_switch_on(LOAD_NEXT_PIN):
-#    poweroff(DONE_PIN)
+if not next_switch_on(LOAD_NEXT_PIN):
+    poweroff(DONE_PIN)
 
 
 # EEPROM
@@ -117,4 +119,4 @@ with open(f"{IMAGE_DIR}/{bmp_image}", "rb") as img:
 # TODO
 # Shutdown
 #
-#poweroff(DONE_PIN)
+poweroff(DONE_PIN)
