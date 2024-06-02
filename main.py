@@ -115,7 +115,7 @@ bmp_image = images[image_i]
 # ePaper Display
 #
 epd = EPD_5in65()
-epd.EPD_5IN65F_Clear(epd.White)
+clean_display(epd)
 with open(f"{IMAGE_DIR}/{bmp_image}", "rb") as img:
     bytestream = bitmap.as_bytes(img)
     display_bytes(epd, bytestream)
