@@ -96,7 +96,13 @@ spi = machine.SPI(
     miso=machine.Pin(4)  # RX
 )
 cs = machine.Pin(5, machine.Pin.OUT)
-sd = sdcard.SDCard(spi, cs)
+
+for _ in range(3):
+    try:
+        sd = sdcard.SDCard(spi, cs)
+    except OSError:
+        continue
+    break
 
 vfs = uos.VfsFat(sd)
 uos.mount(vfs, IMAGE_DIR)
