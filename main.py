@@ -11,6 +11,7 @@ from epaper import EPD_5in65
 # Local
 import bitmap
 
+
 # Fns
 #
 def display_bytes(epd, bytes_gen):
@@ -44,15 +45,16 @@ def poweroff(i):
     pin.high()
     pin.low()
 
-def next_switch_on(i):
-    pin = Pin(i, mode=Pin.IN,pull=Pin.PULL_UP)
+def is_switch_on(i):
+    pin = Pin(i, mode=Pin.IN, pull=Pin.PULL_UP)
     return bool(1 - pin.value())
+
 
 # Constants
 #
 IMAGE_DIR = "/imgs"
 DONE_PIN = 16
-LOAD_NEXT_PIN = 20
+SWITCH_PIN = 20
 
 
 # Debug
@@ -62,7 +64,7 @@ LOAD_NEXT_PIN = 20
 
 time.sleep(2)
 
-if not next_switch_on(LOAD_NEXT_PIN):
+if not is_switch_on(SWITCH_PIN):
     poweroff(DONE_PIN)
 
 
