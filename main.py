@@ -62,7 +62,7 @@ LOAD_NEXT_PIN = 20
 #led = Pin(25, Pin.OUT)
 #led.toggle()
 
-time.sleep(3)
+time.sleep(2)
 
 if not next_switch_on(LOAD_NEXT_PIN):
     poweroff(DONE_PIN)
