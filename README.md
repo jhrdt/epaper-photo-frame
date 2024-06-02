@@ -19,7 +19,7 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 | Component |  | RP2040 | | RP2040 |  | Component |
 | --- | --- | --- | --- | --- | --- | --- |
 | EEPROM | SDA | GP0 | | VBUS | | |
-| EEPROM | SCL | GP1 | | VSYS | | |
+| EEPROM | SCL | GP1 | | VSYS | DRV | Timer |
 | | | GND | | GND | | |
 | SD | CLK | GP2 | | 3V3_EN | | |
 | SD | MOSI | GP3 | | 3V3 (OUT) | | |
@@ -37,7 +37,7 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 | EPD | BUSY | GP13 | | GP18 | | |
 | | | GND | | GND | | DIP Switch | |
 | | | GP14 | | GP17 | | |
-| | | GP15 | | GP16 | | |
+| | | GP15 | | GP16 | Done | Timer |
 
 ## Third-Party Libs
 
