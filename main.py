@@ -38,7 +38,7 @@ def display_bytes(epd, bytes_gen):
 
 def clean_display(epd):
     epd.EPD_5IN65F_Clear(epd.White)
-    epd.EPD_5IN65F_Clear(epd.Clear)
+    #epd.EPD_5IN65F_Clear(epd.Clean)
 
 def poweroff(i):
     pin = Pin(i, Pin.OUT)
