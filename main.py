@@ -111,8 +111,6 @@ bmp_image = images[image_i]
 image_i += 1
 eeprom.write(1, f"{image_i:03d}")  # Write next position
 
-bmp_image = images[image_i]
-
 
 # ePaper Display
 #
