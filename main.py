@@ -1,4 +1,5 @@
 import machine
+import time
 import uos
 from machine import I2C, Pin
 
@@ -10,7 +11,6 @@ from epaper import EPD_5in65
 
 # Local
 import bitmap
-
 
 # Fns
 #
@@ -56,8 +56,13 @@ IMAGE_DIR = "/imgs"
 DONE_PIN = 16
 LOAD_NEXT_PIN = 20
 
-led = Pin(25, Pin.OUT)
-led.toggle()
+
+# Debug
+#
+#led = Pin(25, Pin.OUT)
+#led.toggle()
+
+time.sleep(3)
 
 if not next_switch_on(LOAD_NEXT_PIN):
     poweroff(DONE_PIN)
