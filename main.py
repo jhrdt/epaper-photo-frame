@@ -105,11 +105,12 @@ images = [item for item in sorted(uos.listdir(IMAGE_DIR)) if item.endswith(".bmp
 
 if image_i >= len(images):
     image_i = 0
-
-bmp_image = images[image_i]
-
-image_i += 1
-eeprom.write(1, f"{image_i:03d}")  # Write next position
+    bmp_image = images[image_i]
+    eeprom.write(1, f"{image_i:03d}")
+else:
+    bmp_image = images[image_i]
+    image_i += 1
+    eeprom.write(1, f"{image_i:03d}")
 
 
 # ePaper Display
