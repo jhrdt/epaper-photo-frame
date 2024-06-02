@@ -4,7 +4,6 @@ import uos
 from machine import I2C, Pin
 
 # Third-Party
-import picozero
 import sdcard
 from eeprom import EEPROM
 from epaper import EPD_5in65
@@ -46,8 +45,8 @@ def poweroff(i):
     pin.low()
 
 def next_switch_on(i):
-    switch = picozero.Switch(i)
-    return switch.is_closed
+    pin = Pin(i, mode=Pin.IN,pull=Pin.PULL_UP)
+    return bool(1 - pin.value())
 
 # Constants
 #
