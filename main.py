@@ -43,7 +43,6 @@ def clean_display(epd):
 def poweroff(i):
     pin = Pin(i, Pin.OUT)
     pin.high()
-    #time.sleep(5)
     pin.low()
 
 def next_switch_on(i):
@@ -106,9 +105,8 @@ images = [item for item in sorted(uos.listdir(IMAGE_DIR)) if item.endswith(".bmp
 if image_i >= len(images):
     image_i = 0
 
-# TODO
-# image_i += 1
-eeprom.write(1, f"{image_i:03d}")  # Write next position
+next_image_i = image_i + 1
+eeprom.write(1, f"{next_image_i:03d}")  # Write next position
 
 bmp_image = images[image_i]
 
@@ -121,7 +119,7 @@ with open(f"{IMAGE_DIR}/{bmp_image}", "rb") as img:
     bytestream = bitmap.as_bytes(img)
     display_bytes(epd, bytestream)
 
-# TODO
+
 # Shutdown
 #
 poweroff(DONE_PIN)
