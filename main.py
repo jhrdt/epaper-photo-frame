@@ -49,6 +49,10 @@ def is_switch_on(i):
     pin = Pin(i, mode=Pin.IN, pull=Pin.PULL_UP)
     return bool(1 - pin.value())
 
+def debug():
+    led = Pin(25, Pin.OUT)
+    led.toggle()
+
 
 # Constants
 #
@@ -57,16 +61,10 @@ DONE_PIN = 16
 SWITCH_PIN = 20
 
 
-# Debug
-#
-#led = Pin(25, Pin.OUT)
-#led.toggle()
-
 time.sleep(2)
 
 if not is_switch_on(SWITCH_PIN):
     poweroff(DONE_PIN)
-
 
 # EEPROM
 #
