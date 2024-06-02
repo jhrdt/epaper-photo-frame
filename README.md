@@ -47,8 +47,6 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
   * https://raw.githubusercontent.com/micropython/micropython-lib/master/micropython/drivers/storage/sdcard/sdcard.py
 * Pico_ePaper-5.65.py
   * https://github.com/waveshareteam/Pico_ePaper_Code/blob/main/python/Pico-ePaper-5.65f.py
-* picozero.py
-  * https://github.com/RaspberryPiFoundation/picozero/blob/main/picozero/picozero.py
 
 ## Appendix
 
