@@ -42,12 +42,26 @@ def clean_display(epd):
 
 def poweroff(i):
     pin = Pin(i, Pin.OUT)
-    pin.high()
-    pin.low()
+    while 1:
+        pin.high()
+        time.sleep_ms(500)
+        pin.low()
+        time.sleep_ms(500)
 
 def is_switch_on(i):
     pin = Pin(i, mode=Pin.IN, pull=Pin.PULL_UP)
     return bool(1 - pin.value())
+
+def read_rom(eeprom):
+    rom_data = eeprom.read(1, 3)
+    try:
+        i = int(rom_data)
+    except ValueError:
+        i = 0
+    return i
+
+def write_rom(eeprom, i):
+    eeprom.write(1, f"{i:03d}")
 
 def debug():
     led = Pin(25, Pin.OUT)
@@ -73,11 +87,7 @@ EEPROM_SIZE = 16    # AT24C16 on 0x50
 i2c = I2C(0, sda=Pin(0), scl=Pin(1), freq=400_000)
 eeprom = EEPROM(addr=I2C_ADDR, at24x=EEPROM_SIZE, i2c=i2c)
 
-rom_data = eeprom.read(1, 3)
-try:
-    image_i = int(rom_data)
-except ValueError:
-    image_i = 0
+image_i = read_rom(eeprom)
 
 
 # SD Card Reader
@@ -114,7 +124,11 @@ else:
     bmp_image = images[image_i]
     image_i += 1
 
-eeprom.write(1, f"{image_i:03d}")
+for _ in range(3):
+    write_rom(eeprom, image_i)
+    if read_rom(eeprom) == image_i:
+        break
+    time.sleep(1)
 
 
 # ePaper Display
