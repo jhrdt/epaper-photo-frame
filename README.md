@@ -13,6 +13,8 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 * Step-Up Module 0.8-3.3V to 3.3V
 * DIP switch (1-Lane)
 
+![](./imgs/plan.png)
+
 ## Wire
 
 | Component |  | RP2040 | | RP2040 |  | Component |
