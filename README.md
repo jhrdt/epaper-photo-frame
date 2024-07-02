@@ -2,6 +2,17 @@
 
 Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 
+## Quickstart
+
+RP2040
+
+* Copy file `main.py`
+* Copy dir `lib/`
+
+SD Card
+
+* Create images as mentioned in the folder `example/`
+
 ## BOM
 
 * Pico-ePaper-5.65 (7-Color)
