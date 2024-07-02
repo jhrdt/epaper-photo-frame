@@ -68,6 +68,8 @@ Projects
 
 * RP2040
   * https://www.elektronik-kompendium.de/sites/raspberry-pi/2611061.htm
+  * https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf (Datasheet)
+  * https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinout.pdf (Pinout)
 
 * EEPROM
   * https://www.instructables.com/How-to-Add-an-EEPROM-to-Raspberry-Pi-Pico/
