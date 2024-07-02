@@ -10,9 +10,8 @@ Photo frame using the 7 color 5.65 inch e-paper display from Waveshare
 * AT24C16 EEPROM Memory Module 
 * TPL5110 Low Power Timer Breakout ([Adafruit](https://learn.adafruit.com/adafruit-tpl5110-power-timer-breakout?view=all))
 * Panasonic NCR18650B (3,6V - 3,7V 3400mAh Li-Ion)
+* Step-Up Module 0.8-3.3V to 3.3V
 * DIP switch (1-Lane)
-* (Soft) Tactile Button
-* Rocker Switch
 
 ## Wire
 
@@ -78,4 +77,5 @@ Projects
 
 ## Weblinks
 
-* https://forums.adafruit.com/viewtopic.php?t=208209
+* https://forums.adafruit.com/viewtopic.php?t=208209 (TPL5110 DRV pin voltage drop
+Post)
