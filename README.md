@@ -43,7 +43,7 @@ SD Card
 | | | GP7 | | GP26 | | |
 | EPD | DC | GP8 | | RUN | | |
 | EPD | CS | GP9 | | GP22 | | |
-| | | GND | | GND | | Timer |
+| | | GND | | GND | | |
 | EPD | CLK | GP10 | | GP21 | | |
 | EPD | DIN | GP11 | | GP20 | | DIP Switch |
 | EPD | RST | GP12 | | GP19 | | |
