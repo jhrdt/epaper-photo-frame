@@ -81,5 +81,4 @@ Projects
 
 ## Weblinks
 
-* https://forums.adafruit.com/viewtopic.php?t=208209 (TPL5110 DRV pin voltage drop
-Post)
+* https://forums.adafruit.com/viewtopic.php?t=208209 (TPL5110 DRV pin voltage drop)
