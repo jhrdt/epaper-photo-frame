@@ -12,6 +12,7 @@ RP2040
 SD Card
 
 * Create images as mentioned in the folder `example/`
+* Copy `.bmp` file(s)
 
 ## BOM
 
