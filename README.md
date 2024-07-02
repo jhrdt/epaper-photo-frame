@@ -32,8 +32,8 @@ SD Card
 | Component |  | RP2040 | | RP2040 |  | Component |
 | --- | --- | --- | --- | --- | --- | --- |
 | EEPROM | SDA | GP0 | | VBUS | | |
-| EEPROM | SCL | GP1 | | VSYS | DRV | Timer |
-| | | GND | | GND | | |
+| EEPROM | SCL | GP1 | | VSYS | DRV | Timer/Step-Up Converter |
+| | | GND | | GND | | Timer/Step-Up Converter|
 | SD | CLK | GP2 | | 3V3_EN | | |
 | SD | MOSI | GP3 | | 3V3 (OUT) | | |
 | SD | MISO | GP4 | | | | |
