@@ -49,8 +49,8 @@ SD Card
 | EPD | RST | GP12 | | GP19 | | |
 | EPD | BUSY | GP13 | | GP18 | | |
 | | | GND | | GND | | DIP Switch | |
-| | | GP14 | | GP17 | | |
-| | | GP15 | | GP16 | Done | Timer |
+| | | GP14 | | GP17 | Done | Timer |
+| | | GP15 | | GP16 | | |
 
 ## Third-Party Libs
 
